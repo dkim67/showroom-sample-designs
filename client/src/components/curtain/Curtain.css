@@ -1,0 +1,14 @@
+.curtain-parent {
+  display: flex;
+  height: 175px;
+  position: relative;
+  float: right;
+  margin-top: 20px;
+  margin-right: 45px;
+}
+
+.curtain {
+  background-color: green;
+  padding: 5px;
+  color: white;
+}

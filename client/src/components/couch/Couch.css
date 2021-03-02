@@ -1,0 +1,11 @@
+.couch {
+  background-color:transparent;
+  padding: 5px;
+  color: white;
+  width: 350px;
+  height: 100px;
+  position: absolute;
+  margin-left: 35px;
+  bottom: -50px;
+  display: flex;
+}
