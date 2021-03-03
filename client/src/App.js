@@ -8,7 +8,6 @@ import './App.css';
 class App extends Component {
   state = {
    design: {
-    theme: 'default',
     wall: {
         colors: {
             primary: '#FFA07A',
@@ -32,7 +31,8 @@ class App extends Component {
             primary: '#000080'
         }
     }
-}
+    },
+    showMessage: false,
   };
 
   
@@ -139,7 +139,7 @@ class App extends Component {
             primary: e.target.value
           }
         }
-      }
+      },
     }))
   
   };
@@ -149,6 +149,15 @@ class App extends Component {
       .then(res => {
         console.log(res);
         console.log(res.data);
+        this.setState({
+          showMessage: true
+        }, () => {
+            setTimeout(() => {
+              this.setState({
+                showMessage: false
+              })
+            }, 10000)
+        })
       })
   };
   
@@ -201,7 +210,10 @@ class App extends Component {
           <p style={{ marginRight: '10px' }}>Primary:</p>
           <Button colors={floorPrimaryColors} item='primary' onSelect={ this.onSelectFloorColor }/>
         </div>
-        <button onClick={this.onSave}>Save Theme</button>
+        <div>
+          <button onClick={this.onSave}>Save Theme</button>
+          <p>{ this.state.showMessage ? 'Theme has been successfully saved!': ''}</p>
+          </div>
       </div>
     );
   }

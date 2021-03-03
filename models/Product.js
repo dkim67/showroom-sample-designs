@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 const {Schema} = mongoose;
 
 const productSchema = new Schema({
-    theme: String,
     wall: {
         colors: {
             primary: String,
