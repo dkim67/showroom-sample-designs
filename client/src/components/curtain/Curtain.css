@@ -4,11 +4,10 @@
   position: relative;
   float: right;
   margin-top: 20px;
-  margin-right: 45px;
+  margin-right: 100px;
 }
 
 .curtain {
-  background-color: green;
   padding: 5px;
   color: white;
 }

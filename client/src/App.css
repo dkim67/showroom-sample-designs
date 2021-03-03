@@ -4,27 +4,33 @@ margin: 20px 20px 0px 20px;
 
 .wall {
   position: relative;
-  background-color: tan;
   width: 50%;
   height: 200px;
   padding: 5px;
-  color: white;
   border-color:black;
   margin-left: 30px;
 }
 
 .base {
-  background-color: rgba(88, 5, 5, 0.74);
   width: 52%;
   margin-left: 25px;
 }
 
 .floor {
   color: white;
-   border-bottom: 100px solid red;
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
     height: 0;
     width: 52%;
     
+}
+
+.color-palette {
+  display: flex;
+}
+
+.pallete-title {
+   margin-left: 375px;
+   font-size: large;
+   font-weight: bold;
 }
